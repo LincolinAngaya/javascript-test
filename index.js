@@ -189,21 +189,34 @@
 
 //ES6 class
 //es6 work the same with using protoytpe  its only doing it in different way under the same goodie
-class person {
-    constructor(firstName, lastName, dob) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dob = new Date(dob);
+//class person {
+//     constructor(firstName, lastName, dob) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.dob = new Date(dob);
 
-    }
-    getFulllName() {
-        return `${this.firstName} ${this.lastName}`;
-    }
-}
-//instantiate the object
-const person1 = new person('lincolin', 'Angaya', '9-9-1998')
-const person2 = new person('phinic', 'ogeto', '09-09-1998')
-const person3 = new person('sally', 'mulupi', '09-09-1998')
+//     }
+//     getFulllName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+// //instantiate the object
+// const person1 = new person('lincolin', 'Angaya', '9-9-1998')
+// const person2 = new person('phinic', 'ogeto', '09-09-1998')
+// const person3 = new person('sally', 'mulupi', '09-09-1998')
 
-console.log(person1.getFulllName())
-    //Dom
+// console.log(person1.getFulllName())
+
+//higher order functions and arrays
+const company = [
+    { name: 'company one', category: 'finance', start: '1981', end: '2003' },
+    { name: 'company two', category: 'retail', start: '1982', end: '2004' },
+    { name: 'company three', category: 'auto', start: '1983', end: '2005' },
+    { name: 'company four', category: 'technology', start: '1984', end: '2006' },
+    { name: 'company five', category: 'finance', start: '1985', end: '2007' },
+    { name: 'company six', category: 'auto', start: '1986', end: '2008' },
+    { name: 'company seven', category: 'technology', start: '1981', end: '2009' },
+    { name: 'company eight', category: 'retail', start: '1987', end: '2010' },
+    { name: 'company nine', category: 'finance', start: '1988', end: '2013' }
+]
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
