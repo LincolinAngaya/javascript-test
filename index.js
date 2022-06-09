@@ -155,40 +155,55 @@
 // const addNum = (num1, num2) => num1 * num2
 // console.log(addNum(3, 5));
 
+//object oriented programming in javascript
+//we can construct objects using 
+//constructor function-
+//we can do this in two ways using :-
+//*prototype 
+//*ES6 classes
+//when you create a function constructor you use capital letter
+//constructor function
+// function Person(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
 
-
-
-
-
-
-
-
-
-//in constructor 
-// functions we use keyword this and then we instantiate object
-// CONSTRUCTOR FUNCTION ALWAYS START WITH CAPITAL LETTER
-function Person(firstName, lastName, DOB, course) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.DOB = new Date(DOB);
-    this.course = course;
-    // this.getBirthYear = function() {
-    //     return this.DOB.getFullYear();
-    // }
-    // this.fullName = () => `${this.firstName} ${this.lastName}`;
-    this.firstcourse = () => `${this.firstName} ${this.course}`;
-}
-//we introduce something called prototype so that when we console we dont want to see the functions in the constructor therefore in the functi0ns with this keyword we add a prototype to hide the function i.e
-
-// Person.prototype.fullName = function() {
+//     this.getBirthYear = function() {
+//         return this.dob.getFullYear();
+//     }
+//     this.getFulllName = function() {
 //         return `${this.firstName} ${this.lastName}`;
 //     }
-// Person.prototype.fullcourse = function() {
-//         return `${this.firstName} ${this.course}`;
+// }
+//protoypes
+// Person.prototype.getBirthYear = function() { return this.dob.getFullYear(); }
+// Person.prototype.getFulllName = function() {
+//         return `${this.firstName} ${this.lastName}`;
 //     }
-//INSTANTIATE OBJECT
-const person1 = new Person('LIncolin', 'angaya', '4-09-1998', 'software developer');
-const person2 = new Person('phinic', 'angaya', '14-09-1998');
-const person3 = new Person('sally', 'angaya', '14-09-1998');
-const person4 = new Person('Lenox', 'angaya', '14-09-1998');
-console.log(person1.firstcourse())
+//instantiate the object
+// const person1 = new Person('lincolin', 'Angaya', '9-9-1998')
+// const person2 = new Person('phinic', 'ogeto', '09-09-1998')
+// const person3 = new Person('sally', 'mulupi', '09-09-1998')
+
+// console.log(person1.getFulllName());
+
+//ES6 class
+//es6 work the same with using protoytpe  its only doing it in different way under the same goodie
+class person {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+
+    }
+    getFulllName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+//instantiate the object
+const person1 = new person('lincolin', 'Angaya', '9-9-1998')
+const person2 = new person('phinic', 'ogeto', '09-09-1998')
+const person3 = new person('sally', 'mulupi', '09-09-1998')
+
+console.log(person1.getFulllName())
+    //Dom
